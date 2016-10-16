@@ -46,7 +46,7 @@ def set_log_level(ctx, param, value):
 # TODO: allow custom models
 # TODO: dynamically fill models list
 @click.option('--model', default='GOOGLENET_BVLC', help='The model to use. Valid values: '
-              'GOOGLENET_BVLC, GOOGLENET_PLACES205, GOOGLENET_PLACES365, RESNET_50.')
+              'GOOGLENET_BVLC, GOOGLENET_PLACES205, GOOGLENET_PLACES365, RESNET_50, OPEN_NSFW.')
 @click.option('--n', default=10, help='The number of iterations per scale.')
 @click.option('--per-octave', default=2, help='The number of scales per octave.')
 @click.option('--step-size', default=1.0, help='The strength of each iteration.')
