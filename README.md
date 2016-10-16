@@ -31,7 +31,7 @@ Options:
                                image is below this.
   --model TEXT                 The model to use. Valid values: GOOGLENET_BVLC,
                                GOOGLENET_PLACES205, GOOGLENET_PLACES365,
-                               RESNET_50.
+                               RESNET_50, OPEN_NSFW.
   --n INTEGER                  The number of iterations per scale.
   --per-octave INTEGER         The number of scales per octave.
   --smoothing FLOAT            The per-iteration smoothing factor. Try
