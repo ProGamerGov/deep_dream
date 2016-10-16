@@ -69,7 +69,16 @@ RESNET_50 = CNNData(
     _BASE_DIR/'resnet/ResNet-50-model.caffemodel',
     (104, 117, 123),
     categories=_BASE_DIR/'bvlc_googlenet/categories.txt')
-
+GOOGLENET_BVLC = CNNData(
+    _BASE_DIR/'bvlc_googlenet/deploy.prototxt',
+    _BASE_DIR/'bvlc_googlenet/bvlc_googlenet.caffemodel',
+    (104, 117, 123),
+    categories=_BASE_DIR/'bvlc_googlenet/categories.txt')
+OPEN_NSFW = CNNData(
+    _BASE_DIR/'resnet/ResNet_50_1by2_nsfw.prototxt',
+    _BASE_DIR/'resnet/resnet_50_1by2_nsfw.caffemodel',
+    (104, 117, 123),
+    categories=_BASE_DIR/'bvlc_googlenet/categories.txt')
 
 def normf(arr, *args, **kwargs):
     return np.linalg.norm(arr.flatten(), *args, **kwargs)
